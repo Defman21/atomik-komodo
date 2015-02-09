@@ -1,0 +1,109 @@
+@import url("chrome://komodo/skin/plat/shared/tabs.less");
+@import url("chrome://atomik/skin/light/_config/colors.less");
+
+#editorviewbox tabs
+{
+  background: @color-strongest;
+  margin-bottom: 2px;
+  border-bottom: 1px solid @color-strongest;
+    tab
+    {
+      position: relative;
+        padding: 1px 3px;
+        margin-top: 4px;
+        font-weight: 400 !important;
+        .tab-icon
+        {
+            visibility: collapse;
+        }
+    }
+    
+    tab:after {
+      content:  "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -moz-transform: perspective(40px) rotateX(15deg);
+      z-index: -1;
+      background: @color-stronger;
+      border: 1px solid @color-strongest;
+    }
+    
+    tab:hover:after {
+      content:  "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -moz-transform: perspective(40px) rotateX(15deg);
+      z-index: -1;
+      background: @color-strong;
+      border: 1px solid @color-strongest;
+    }
+    
+    tab[selected="true"]:after {
+      content:  "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -moz-transform: perspective(40px) rotateX(15deg);
+      z-index: -1;
+      background: @color-weak;
+      border: 1px solid @color-strongest;
+    }
+    
+    tab[first-tab="true"] {
+        margin-left: 12px !important;
+    }
+}
+
+.scrollbox-innerbox[orient="horizontal"] {
+    //border-bottom: 3px solid #272822;
+}
+
+.tab-arrowscrollbox
+{
+
+    & > .scrollbutton-up,
+    & > .scrollbutton-down-stack > .scrollbutton-down[chromedir="rtl"]
+    {
+        border-right: 1px solid !important;
+        -moz-border-right-colors: @color-strong !important;
+    }
+
+    & > .scrollbutton-down,
+    & > .scrollbutton-up[chromedir="rtl"]
+    {
+        border-left: 1px solid !important;
+        -moz-border-left-colors: @color-strong !important;
+    }
+}
+
+
+.tabs-select-button
+{
+    border-left: 1px solid !important;
+    padding-left: 4px;
+    -moz-border-left-colors: @color-strong !important;
+}
+
+.tabs-left
+{
+    visibility: collapse;
+}
+
+ko-pane[type="icons"] tab
+{
+  margin: 4px 4px 4px 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

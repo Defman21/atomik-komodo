@@ -1,0 +1,13 @@
+override chrome://komodo/skin/_config/window.less   chrome://atomik/skin/light/_config/window.less
+override chrome://komodo/skin/_config/tabs.less     chrome://atomik/skin/light/_config/tabs.less
+override chrome://komodo/skin/_config/toolbars.less chrome://atomik/skin/light/_config/toolbars.less
+override chrome://komodo/skin/_config/scrollbars.less   chrome://atomik/skin/light/_config/scrollbars.less
+override chrome://komodo/skin/_config/menus.less    chrome://atomik/skin/light/_config/menus.less
+override chrome://komodo/skin/_config/panes.less    chrome://atomik/skin/light/_config/panes.less
+
+override chrome://komodo/skin/tabs.less     chrome://atomik/skin/light/tabs.less
+override chrome://komodo/skin/toolbars.less chrome://atomik/skin/light/toolbars.less
+override chrome://komodo/skin/modules.less  chrome://atomik/skin/light/modules.less
+override chrome://komodo/skin/window.less   chrome://atomik/skin/light/window.less
+override chrome://global/skin/console/console.css   chrome://atomik/skin/light/console.less
+override chrome://komodo/skin/platform.less          chrome://atomik/skin/light/platform.less
